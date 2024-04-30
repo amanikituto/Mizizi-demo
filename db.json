@@ -1,0 +1,22 @@
+{
+  "homePage": {
+    "hero": { 
+      "heading": "Mizizi AI: Transforming Kenyan Businesses", 
+      "intro": "Harness the power of artificial intelligence..." 
+    },
+    "testimonials": [
+      { "text": "Mizizi AI's solutions helped us ...", "clientName": "Barbara Omwayi", "clientTitle": "Spark Communications Limited", "clientImage": "assets/13.jpeg" },
+      { /* More Testimonials */ }
+    ],
+    "services": [ 
+      { "name": "AI Policy Advisory", "image": "assets/Mizizi Logo.png" },
+      { /* More Services */ }
+    ],
+    "leadCapture": { "heading": "Grow with AI...", "intro": "Subscribe to our newsletter..." }
+  },
+  "team": [
+    { "name": "Amani Kituto", "title": "Founder and CEO", "image": "assets/me.jpg", "linkedin": "https://www.linkedin.com/in/amanikituto/" },
+    { /* More Team Members */ }
+  ],
+  "news": []   
+} 
