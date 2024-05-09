@@ -558,3 +558,22 @@ footer {
   padding: 20px;
   border-radius: 5px;
 }
+.demo-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.demo-card h3 {
+  margin-bottom: 10px;
+}
+
+.demo-card input, .demo-card button {
+  margin-bottom: 10px;
+}
+
+.demo-card div {
+  min-height: 50px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}

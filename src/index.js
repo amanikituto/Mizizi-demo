@@ -296,3 +296,19 @@ contactForm.addEventListener('submit', (e) => {
 function collectFormData() {
     // Gather data from form fields
 }
+// Rafiki Text Generation
+document.getElementById('rafiki-text-btn').addEventListener('click', function() {
+  const textInput = document.getElementById('rafiki-text-input').value;
+  // Call your Rafiki Text Generation API here with textInput
+});
+
+// Rafiki Image Generation
+document.getElementById('rafiki-image-btn').addEventListener('click', function() {
+  const imageInput = document.getElementById('rafiki-image-input').files[0];
+  // Call your Rafiki Image Generation API here with imageInput
+});
+
+// Rafiki Speech Recognition
+document.getElementById('rafiki-speech-btn').addEventListener('click', function() {
+  // Call your Rafiki Speech Recognition API here
+});
