@@ -1,5 +1,7 @@
 # Mizizi AI Web Application
-https://mizizi-ai.github.io/mizizi/
+https://mizizi-ai.github.io/mizizi
+
+
 **Project Overview**
 
 Mizizi AI is a pioneering Kenyan company dedicated to harnessing the power of artificial intelligence for business innovation and positive social impact. This web application serves as a central hub to showcase our capabilities, educate users, and facilitate customer interactions.
