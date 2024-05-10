@@ -6,42 +6,33 @@
  <title>Mizizi AI Web Application</title>
  <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-image: url('./assets/1.png'); background-position: center center; background-attachment: fixed; background-size: cover;">
-    <header>
+<body style="background-image: url('./assets/1.png'); background-position: center center; background-attachment: fixed; background-size: cover;"></body>
+<body>
+    <<header>
         <h1>Mizizi AI</h1>
         <div class="dropdown">
           <button class="dropbtn">Menu</button>
           <div class="dropdown-content">
-            <a href="index.html"><i class="fa fa-home"></i> Home</a>
-            <a href="services.html"><i class="fa fa-cogs"></i> Services</a>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="knowledge-base.html">Knowledge</a>
+            <a href="ai-demo-area.html"> Demo</a>
+            
           </div>
-        </nav>
-       </header>
     <main>
         <section id="ai-demos">
             <div class="container">
                 <h2>Explore the Power of AI</h2>
-        
                 <div class="demo-card">
-                  <h3>Rafiki Image Generation</h3>
-                  <div id="rafiki-image-demo">
-                      <input type="file" id="rafiki-image-input">
-                      <button id="rafiki-image-btn">Generate</button>
-                      <div id="rafiki-image-output"></div>
+                  <h3>Text Generation using rafiki</h3>
+                  <div id="nlp-text-demo">
+                      <textarea id="nlp-text-input" placeholder="Enter your text here..."></textarea>
+                      <button id="nlp-text-btn">Generate</button>
+                      <div id="nlp-text-output"></div>
                   </div>
               </div>
-              
-              <div class="demo-card">
-                  <h3>Rafiki Speech Recognition</h3>
-                  <div id="rafiki-speech-demo">
-                      <button id="rafiki-speech-btn">Start Listening</button>
-                      <div id="rafiki-speech-output"></div>
-                  </div>
-              </div>
-       
-                   
             </div>
         </section>
-    
+    </main>
 </body>
 </html>

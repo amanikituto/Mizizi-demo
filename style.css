@@ -1,20 +1,61 @@
 body {
-  font-family: sans-serif;
-  background-color: #000;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  color: white;
+  background-color: black;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Header Styles */
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: black;
+  color:white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menu-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.demo-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  margin: 20px 0;
   padding: 20px;
+}
+
+#nlp-text-input {
+  width: 100%;
+  padding: 10px;
+  border:none;
+  border-radius: 50px;
+  margin-bottom: 100px;
+}
+
+#nlp-text-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#nlp-text-output {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
 }
 
 /* Mizizi AI Title */
@@ -155,10 +196,10 @@ hero .intro {
 }
 
 .team-member img {
-  max-width: 150px;
-  height: auto;
-  border-radius: 50%; 
-  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .social-links {

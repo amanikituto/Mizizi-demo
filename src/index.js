@@ -1,4 +1,4 @@
-}
+
 // Rafiki Text Generation
 document.getElementById('rafiki-text-btn').addEventListener('click', function() {
   const textInput = document.getElementById('rafiki-text-input').value;
@@ -92,13 +92,18 @@ function searchKnowledgeBase(query) {
     body: JSON.stringify(data)
   })
   .then(response => response.json())
-  .then(data => {
     // Handle the response data
     // For example, you could display the top result in the console
     console.log(data.answers[0].answer);
-  })
-  .catch(error => {
-    // Handle the error
-    console.error('Error:', error);
-  });
-}
+  }
+    .catch(error => {
+      // Handle the error
+      console.error('Error:', error);
+    });
+  }); // Add a closing parenthesis here
+
+document.getElementById('nlp-text-btn').addEventListener('click', function() {
+  var inputText = document.getElementById('nlp-text-input').value;
+  // Call your NLP text generation function here with inputText as parameter
+  // Display the output in the 'nlp-text-output' div
+});
