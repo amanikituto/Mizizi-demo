@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: black;
+  background-color:black;
   color:white;
   padding: 10px 0;
   text-align: center;
@@ -16,10 +16,12 @@ header {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  text-align: center;
 }
 
 .menu-content a {
   color: white;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -45,7 +47,7 @@ header {
 }
 
 #nlp-text-btn {
-  background-color: black;
+  background-color: white;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -60,9 +62,11 @@ header {
 
 /* Mizizi AI Title */
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family:
   font-size: 2.5em;
   font-weight: bold;
+  background-color:black;
+  color:white;
 }
 /* Hero Section */
 hero {
@@ -74,7 +78,8 @@ hero {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center; /* Center text within the hero */
+  text-align: center;
+   /* Center text within the hero */
 }
 
 hero .container {
@@ -84,6 +89,12 @@ hero .container {
 hero h1 {
   font-size: 3rem;  /* Larger heading */
   margin-bottom: 15px;
+  color: #ddd;
+}
+hero h2 {
+  font-size: 3rem;  /* Larger heading */
+  margin-bottom: 15px;
+  color: #ddd;
 }
 
 hero .intro {
@@ -102,7 +113,7 @@ hero .intro {
 
 
 .testimonial-item {
-  background-color:black;
+  background-color:white;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
@@ -124,6 +135,8 @@ hero .intro {
 }
 #services {
   padding: 40px 0;
+  background-color: black;
+  color:white;
 }
 
 .services-grid {
@@ -134,7 +147,8 @@ hero .intro {
 
 .service-card {
   text-align: center;
-  background-color: black;
+  background-color: white;
+  color: #000;
   padding: 20px;
   border-radius: 5px;
 }
@@ -146,16 +160,18 @@ hero .intro {
 /* If you want to highlight specific services */
 .service-card:nth-child(1), 
 .service-card:nth-child(4) { /* Example: Target first & fourth card */
-    background-color:black; /* Your accent color */
-    color: #fff; 
+    background-color:white; /* Your accent color */
+    color:black; 
 }
 #news {
   padding: 40px 0;
-  background-color:black; /* Light background for separation */
+  background-color:white; /* Light background for separation */
 }
 
 .news-items {
-  display: flex; /* Arrange news items horizontally */
+  display: flex;
+  background-color:white;
+  color: black; /* Arrange news items horizontally */
   justify-content: space-between; /* Even spacing */
   flex-wrap: wrap; /* Wrap to a new line if needed */
 }
@@ -163,7 +179,8 @@ hero .intro {
 .news-item {
   width: 30%; /* Adjust based on how many items per row */
   margin-bottom: 20px;
-  background:black;
+  background:white;
+
   padding: 15px;
 }
 
@@ -178,7 +195,8 @@ hero .intro {
 }
 #team {
   padding: 40px 0;
-  background-color: #000000; /* Light background for differentiation */
+  background-color:black;
+  color: #ddd; /* Light background for differentiation */
 }
 
 .team-members {
@@ -188,8 +206,8 @@ hero .intro {
 }
 
 .team-member {
-  text-align: center;
-  background:black;
+  text-align: span;
+  background:white;
   margin: 15px;
   padding: 20px;
   border-radius: 5px;
@@ -534,9 +552,7 @@ footer {
     border-radius: 5px;
 }
 
-.available-plans {
-  /* Style to display plans side-by-side or as a list */
-}
+
 /* Additions to your existing CSS */
 .dropdown {
   position: relative; /* To contain the dropdown menu */
@@ -624,4 +640,47 @@ footer {
 /* Add a smooth transition effect to the dropdown menu */
 .dropdown-content {
   transition: all 0.5s ease;
+}
+#chatbot {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#chatbot-header {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+}
+
+#chatbot-conversation {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#chatbot-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+#chatbot-input input {
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#chatbot-input button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

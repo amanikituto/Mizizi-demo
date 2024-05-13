@@ -1,19 +1,20 @@
 
-// Rafiki Text Generation
-document.getElementById('rafiki-text-btn').addEventListener('click', function() {
-  const textInput = document.getElementById('rafiki-text-input').value;
-  // Call your Rafiki Text Generation API here with textInput
-});
+document.getElementById('send-btn').addEventListener('click', function() {
+  var userInput = document.getElementById('user-input').value;
+  var chatbotConversation = document.getElementById('chatbot-conversation');
 
-// Rafiki Image Generation
-document.getElementById('rafiki-image-btn').addEventListener('click', function() {
-  const imageInput = document.getElementById('rafiki-image-input').files[0];
-  // Call your Rafiki Image Generation API here with imageInput
-});
+  // Add user's message to the conversation
+  var userMessage = document.createElement('p');
+  userMessage.textContent = 'User: ' + userInput;
+  chatbotConversation.appendChild(userMessage);
 
-// Rafiki Speech Recognition
-document.getElementById('rafiki-speech-btn').addEventListener('click', function() {
-  // Call your Rafiki Speech Recognition API here
+  // Add chatbot's response to the conversation
+  var chatbotMessage = document.createElement('p');
+  chatbotMessage.textContent = 'Chatbot: ' + 'Sorry, I am not able to assist with that.';
+  chatbotConversation.appendChild(chatbotMessage);
+
+  // Clear the input field
+  document.getElementById('user-input').value = '';
 });
 // Replace with your Azure endpoint and key
 const azureEndpoint = 'https://your-azure-endpoint.comhttps://ai-amani302128626576.openai.azure.com/openai/deployments/rafiki/chat/completions?api-version=2023-03-15-preview';
